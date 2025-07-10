@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Projects | Nikhil Mudda{% endblock %}
+
+{% block content %}
+<section class="projects">
+  <h2>🎞️ Featured Films</h2>
+  <div class="project-grid">
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='css/images/anime.png') }}" alt="Anime Recommender">
+      <h3>Anime Recommendation System</h3>
+      <p>
+        Personalized recommendation system using Web Mining & NLP. Uses content-based filtering and semantic analysis on reviews and metadata to improve accuracy.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='css/images/email.jpeg') }}" alt="Phishing Detector">
+      <h3>Email Management System</h3>
+      <p>
+        A spam/phishing detection tool using NLP & URL-based filtering. Improves email safety via semantic classification techniques.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='css/images/medical.png') }}" alt="Medical NLP">
+      <h3>Medical Report Analyzer</h3>
+      <p>
+        Clinical NLP-powered report interpreter. Extracts diagnostics and keywords from scanned prescriptions using OCR + NLP.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='css/images/project1.jpg') }}" alt="Portfolio Website">
+      <h3>Portfolio Website</h3>
+      <p>
+        This theater-themed dark portfolio built using Flask, Jinja2, and CSS — designed like a cinematic experience.
+      </p>
+    </div>
+
+  </div>
+</section>
+{% endblock %}
